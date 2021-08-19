@@ -1,0 +1,28 @@
+--1)
+--(select first_name from actor
+--order by first_name)
+--union 
+--(select first_name from customer
+--order by first_name);
+
+
+--2)
+(select first_name from actor
+order by first_name)
+intersect
+(select first_name from customer
+order by first_name);
+
+--3)
+--(select first_name from actor
+--order by first_name)
+--except 
+--(select first_name from customer
+--order by first_name);
+
+4)
+--(select first_name from actor
+--order by first_name)
+--union all
+--(select first_name from customer
+--order by first_name);
