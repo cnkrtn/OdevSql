@@ -1,0 +1,22 @@
+--1)
+select rating,Count(film) from film
+group by rating;
+
+
+--2)
+select COUNT(film),replacement_cost from film
+GROUP BY replacement_cost
+Having Count(film)>50
+order by replacement_cost;
+
+
+--3)
+select Count(customer_id) from customer
+group by  store_id;
+
+
+--4)
+select country_id,count(*) from city
+group by country_id
+order by count(*) desc
+limit 1;
